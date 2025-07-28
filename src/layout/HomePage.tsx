@@ -1,6 +1,7 @@
 import type React from "react";
 import Sidebar from "./Sidebar";
 import TaskBoard from "../pages/TaskBoard";
+import { Button } from "@mantine/core";
 
 
 const HomePage: React.FC = () => {
@@ -14,6 +15,9 @@ const HomePage: React.FC = () => {
                 <div className="col-span-9">
                     <TaskBoard />
                 </div>
+                <div className="mt-2">
+                 <Button variant="gradient" gradient={{ from: 'blue', to: 'lime', deg: 90 }}>Button</Button>
+                 </div>
             </div>
         </div>
     )
